@@ -1,5 +1,6 @@
 import style from "@/components/ui/Footer/footer.module.css"
 import Logo from "@/assets/svg/logo.svg"
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -24,16 +25,16 @@ function Footer() {
 
       <div>
         <h3>Follow us</h3>
-        <img src="#" alt="instagrand" />
-        <img src="#" alt="facebook" />
-        <img src="#" alt="twitter" />
-        <img src="#" alt="yelp"/>
+        <Image src="#" alt="instagrand" />
+        <Image src="#" alt="facebook" />
+        <Image src="#" alt="twitter" />
+        <Image src="#" alt="yelp"/>
       </div>
 
       <div>
         <h3>Get the Flour app</h3>
-        <img src="#" alt="mac" />
-        <img src="#" alt="android" />
+        <Image src="#" alt="mac" />
+        <Image src="#" alt="android" />
         <p>Copyright © 2023 Flour Bakery</p>
       </div>
     </footer>
