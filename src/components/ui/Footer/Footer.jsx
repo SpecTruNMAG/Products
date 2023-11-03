@@ -25,16 +25,12 @@ function Footer() {
 
       <div>
         <h3>Follow us</h3>
-        <Image src="#" alt="instagrand" />
-        <Image src="#" alt="facebook" />
-        <Image src="#" alt="twitter" />
-        <Image src="#" alt="yelp"/>
+        
       </div>
 
       <div>
         <h3>Get the Flour app</h3>
-        <Image src="#" alt="mac" />
-        <Image src="#" alt="android" />
+        
         <p>Copyright © 2023 Flour Bakery</p>
       </div>
     </footer>
