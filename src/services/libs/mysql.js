@@ -3,10 +3,10 @@
 import { connect } from '@planetscale/database'
 
 const config = {
-  database: process.env.DATABASE,
-  host:process.env.HOST,
-  username: process.env.USERNAME,
-  password: process.env.PASSWORD
+  database: PLANETSCALE_DB,
+  host:PLANETSCALE_DB_HOST,
+  username: PLANETSCALE_DB_USERNAME,
+  password: PLANETSCALE_DB_PASSWORD
 }
 
 const conn = connect(config)
