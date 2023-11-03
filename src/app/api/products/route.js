@@ -1,13 +1,13 @@
 import conn from "@/services/libs/mysql";
+
 import { NextResponse } from "next/server";
 
 
-export async function GET() {
-  
- const res = await conn.query("select * from product");
+export async function GET(request) {
  
  try {
-  return NextResponse.json(res);
+  const res = await conn.execute("select * from product");
+  return NextResponse.json(res.rows);
  } catch (error) {
   return NextResponse.json({
     "message":error

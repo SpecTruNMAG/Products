@@ -5,8 +5,8 @@ import { NextResponse } from "next/server";
 export async function GET(request,{params}){
     
   try {
-    const res= await conn.query("select * from product where id=?",[params.id])
-    return NextResponse.json(res[0])
+    const res= await conn.execute("select * from product where pro_id=?",[params.id])  
+    return NextResponse.json(res.rows[0])
   } catch (error) {
     return NextResponse.json({
       message:error,
